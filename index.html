@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <title>Queens Street Grill Menu</title>
+  <style>
+    :root{
+      --bg:#080808;
+      --panel:#111;
+      --orange:#ff5a00;
+      --white:#ffffff;
+      --muted:#c8c8c8;
+      --line:#333;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--white);
+      font-family:Arial, Helvetica, sans-serif;
+      line-height:1.45;
+    }
+    .wrap{
+      max-width:760px;
+      margin:0 auto;
+      padding:24px 18px 48px;
+    }
+    header{
+      text-align:center;
+      padding:18px 8px 26px;
+      border-bottom:3px solid var(--orange);
+      margin-bottom:24px;
+    }
+    .queens{
+      margin:0;
+      color:var(--orange);
+      font-weight:900;
+      font-style:italic;
+      font-size:clamp(44px, 12vw, 88px);
+      letter-spacing:-2px;
+      line-height:.95;
+    }
+    .street{
+      margin:8px 0 4px;
+      font-size:clamp(24px, 7vw, 44px);
+      font-weight:800;
+      letter-spacing:2px;
+    }
+    .tag{
+      color:var(--orange);
+      font-weight:800;
+      font-size:15px;
+      letter-spacing:.5px;
+    }
+    section{
+      background:var(--panel);
+      border:1px solid #202020;
+      border-radius:16px;
+      padding:18px;
+      margin:0 0 16px;
+      box-shadow:0 8px 24px rgba(0,0,0,.25);
+    }
+    h2{
+      margin:0 0 14px;
+      color:var(--orange);
+      font-size:24px;
+      text-transform:uppercase;
+      letter-spacing:.5px;
+    }
+    .item{
+      display:flex;
+      justify-content:space-between;
+      gap:16px;
+      padding:9px 0;
+      border-bottom:1px dotted var(--line);
+      align-items:flex-start;
+    }
+    .item:last-child{border-bottom:none}
+    .name{font-weight:700}
+    .price{
+      color:var(--orange);
+      font-weight:800;
+      white-space:nowrap;
+    }
+    .desc{
+      color:var(--muted);
+      font-size:14px;
+      margin-top:3px;
+    }
+    .badge{
+      display:inline-block;
+      background:var(--orange);
+      color:#000;
+      font-weight:900;
+      border-radius:999px;
+      padding:5px 10px;
+      margin-bottom:10px;
+      font-size:13px;
+    }
+    footer{
+      text-align:center;
+      color:#aaa;
+      font-size:13px;
+      padding-top:10px;
+    }
+    .hero-note{
+      text-align:center;
+      color:#ddd;
+      margin:0 0 18px;
+      font-size:15px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1 class="queens">QUEENS</h1>
+      <div class="street">STREET GRILL</div>
+      <div class="tag">REAL FOOD. REAL FLAVOR. REAL QUEENS.</div>
+    </header>
+
+    <p class="hero-note">Fresh breakfast, coffee, wraps, rice bowls and more.</p>
+
+    <section>
+      <h2>Breakfast</h2>
+      <div class="item"><div><div class="name">Plain Croissant</div></div><div class="price">$2.99</div></div>
+      <div class="item"><div><div class="name">Danish</div></div><div class="price">$2.99</div></div>
+      <div class="item"><div><div class="name">2 Egg &amp; Cheese on a Roll</div></div><div class="price">$5.99</div></div>
+      <div class="item"><div><div class="name">Add Extra Egg</div></div><div class="price">+$1.49</div></div>
+      <div class="item"><div><div class="name">Add Bacon</div></div><div class="price">+$1.99</div></div>
+      <div class="item"><div><div class="name">Add Hash Brown</div></div><div class="price">+$1.99</div></div>
+    </section>
+
+    <section>
+      <h2>Hot Coffee</h2>
+      <div class="item"><div class="name">10 oz</div><div class="price">$2.49</div></div>
+      <div class="item"><div class="name">12 oz</div><div class="price">$2.99</div></div>
+    </section>
+
+    <section>
+      <h2>Iced Coffee</h2>
+      <div class="item"><div class="name">16 oz</div><div class="price">$3.99</div></div>
+      <div class="item"><div class="name">20 oz</div><div class="price">$4.49</div></div>
+    </section>
+
+    <section>
+      <h2>Drinks</h2>
+      <div class="item"><div class="name">Soda Cans</div><div class="price">$2.49</div></div>
+      <div class="item"><div class="name">Water Bottles</div><div class="price">$1.99</div></div>
+      <div class="item"><div class="name">Monster Energy Drinks</div><div class="price">$5.49</div></div>
+    </section>
+
+    <section>
+      <span class="badge">ALL WRAPS $10.99</span>
+      <h2>Lunch Wraps</h2>
+      <div class="item"><div class="name">Grilled Chicken Wrap</div><div class="price">$10.99</div></div>
+      <div class="item"><div class="name">Tuna Wrap</div><div class="price">$10.99</div></div>
+      <div class="item"><div class="name">Chicken Salad Wrap</div><div class="price">$10.99</div></div>
+    </section>
+
+    <section>
+      <h2>Rice Bowls</h2>
+      <div class="item">
+        <div>
+          <div class="name">Jamaican Chicken Bowl</div>
+          <div class="desc">Jerk grilled chicken with rice and red beans, salad, and a side of jerk BBQ sauce.</div>
+        </div>
+        <div class="price">S $12.99<br>L $15.99</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="name">Mediterranean Rice Bowl</div>
+          <div class="desc">Herb-marinated grilled chicken with yellow rice, chopped salad, cucumbers, tomatoes, red onions, kalamata olives, feta cheese, and a side of Greek yogurt sauce.</div>
+        </div>
+        <div class="price">S $12.99<br>L $15.99</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Side</h2>
+      <div class="item"><div class="name">Side of Fries</div><div class="price">$4.99</div></div>
+    </section>
+
+    <section>
+      <span class="badge">FRIDAY SPECIAL</span>
+      <h2>Fish &amp; Chips</h2>
+      <div class="item"><div class="name">Small</div><div class="price">$12.99</div></div>
+      <div class="item"><div class="name">Large</div><div class="price">$15.99</div></div>
+    </section>
+
+    <footer>
+      Thank you for supporting local.<br>
+      Menu and prices subject to change.
+    </footer>
+  </main>
+</body>
+</html>
